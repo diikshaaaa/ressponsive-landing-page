@@ -51,6 +51,15 @@ ul {
 .align-right-box {
   border: 1px solid #000033;
   padding: 5px 5px 1px 5px;
+  position: relative;
+  cursor: pointer;
+  /* z-index: 2; */
+}
+.align-right-box:hover {
+  opacity: 0.2;
+}
+.fa-align-right {
+  font-size: 20px;
 }
 
 /* first section */
@@ -233,8 +242,36 @@ ul {
   .main-nav {
     padding: 10px 15px;
   }
-  .main-nav ul li {
+  /* .main-nav ul li {
     display: none;
+  } */
+  /* .align-right-box {
+    display: block;
+  } */
+  .main-nav ul.menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-600px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .main-nav ul.menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  .main-nav ul.menu li:last-child {
+    border-bottom: 0;
+  }
+  .main-nav ul.menu.show {
+    transform: translateX(-20px);
   }
   .container2 h1 {
     font-size: 3rem;
@@ -332,9 +369,35 @@ ul {
   .main-nav {
     padding: 10px 15px;
   }
-  .main-nav ul li {
+  /* .main-nav ul li {
     display: none;
+  } */
+  .main-nav ul.menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-600px);
+    transition: transform 0.5s ease-in-out;
   }
+  .main-nav ul.menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  .main-nav ul.menu li:last-child {
+    border-bottom: 0;
+  }
+  .main-nav ul.menu.show {
+    transform: translateX(-20px);
+  }
+
   .container2 h1 {
     font-size: 3rem;
     padding: 10px 15px 5px 15px;
@@ -435,8 +498,33 @@ ul {
   .main-nav {
     padding: 10px 15px;
   }
-  .main-nav ul li {
+  /* .main-nav ul li {
     display: none;
+  } */
+  .main-nav ul.menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-600px);
+    transition: transform 0.5s ease-in-out;
+  }
+  .main-nav ul.menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+  .main-nav ul.menu li:last-child {
+    border-bottom: 0;
+  }
+  .main-nav ul.menu.show {
+    transform: translateX(-20px);
   }
   .container2 h1 {
     font-size: 3rem;
